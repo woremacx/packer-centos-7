@@ -1,18 +1,17 @@
-packer-centos-7
-===
+# packer-centos-7
 
+## prepare
 ```
-vagrant init hfm4/centos7
-vagrant up
+brew install packer
+brew install vagrant
 ```
 
-### Box url
-
-- https://atlas.hashicorp.com/hfm4/boxes/centos7
-
-Build box
----
-
+## build box
 ```
 packer build packer.json
+```
+
+## use
+```
+vagrant up
 ```
